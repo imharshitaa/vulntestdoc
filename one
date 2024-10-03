@@ -1,0 +1,33 @@
+Company - onetrust
+
+URL target: https://pentest-app.onetrust.com/
+
+------------------
+
+STEPS to produce vuln: 
+
+ZAPROXY - automated test show alerts csp wildcard directive
+
+INSPECT - Network > login > content security policy header > check for *, unsafe-eval, unsafe-inline > potential XSS vuln
+
+MANUAL TEST - login enter invalid email - shows error before entering password - potential XSS injection point
+
+----------------------
+
+mitigation: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
