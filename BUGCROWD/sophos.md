@@ -10,20 +10,35 @@ https://cloud-assets.sophos.com/assets/mfe/791152a3b6196199b9ceb1bd2dd27ab159385
 
 ---------------------------
 
-1 - automated Tested on zap active scan - showed alert server leaks version information on HTTP response header - server name details.
+1 - automated Tested on zap active scan - showed alert server leaks version information on HTTP response header - server name details. 
+- Server Information Disclosure:
+Title: "Information Disclosure: Server Version Details Exposed in HTTP Response Headers"
 
 2 - inspect page html head code - Cross-Domain JavaScript Source Inclusion - external javascript without validation.
+- Cross-Domain JavaScript Source Inclusion:
+Title: "Cross-Domain JavaScript Source Inclusion: External Scripts Included Without Validation"
+
 
 3 - inspec page html head code - JavaScript Dependency Vulnerabilities - external domain source without validating.
+- JavaScript Dependency Vulnerabilities:
+Title: "JavaScript Dependency Vulnerability: External Libraries Included Without Validation"
 
 4 - from zap alert for cross domain javascript source file inclusion - content security policy headers not mentioned which could lead to potential XSS Attacks. 
 potential information leakage for id data and cause unauthorized access. 
+- Missing Content Security Policy:
+Title: "Security Risk: Missing Content Security Policy (CSP) Headers"
 
 5 - mfa not supported causing unauthorized access.
+- Lack of Multi-Factor Authentication:
+Title: "Security Risk: Multi-Factor Authentication (MFA) Not Implemented"
 
 6 - potential Cross-Site Scripting (XSS) vulnerability reflected - on login page - input field accepts the payload script tag - error message reflects the same input - might allow to inject malicious scripts in user input. 
+- Reflected Cross-Site Scripting (XSS):
+Title: "Reflected XSS Vulnerability: User Input Not Properly Sanitized"
 
 7 - cross domain misconfiguration - header access control allow origin * - leads to unauthorized access to any source API or domain. 
+- CORS Misconfiguration:
+*Title: "CORS Misconfiguration: Access-Control-Allow-Origin Set to "
 
 ------------------------------------------------------------------------
 
